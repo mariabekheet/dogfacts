@@ -11,27 +11,37 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- Main JavaScript File -->
     <script src="js/main.js" defer></script>
-    <title>JavaScript</title>
+    <title>Contact Us</title>
 </head>
 
 <body>
     <div>
         <header class="display text-center">
             <h1 id="random">🐶 Dog Facts</h1>
-            <p>Refresh for a new fact!</p>
-            <!-- P element to display error messages -->
-            <p id="error"></p>
-            <!-- div to display data from the API -->
-            <div id="facts">
-                <p>Random Fact:</p>
+            <h3>Contact Us</h3>
+            <div id="contact" class="container">
+                <!-- P element with contact details -->
+                <p>
+                    Phone Number: 0412 345 678<br/>
+                    Email: info@dogfacts.com.au<br/>
+                    Address: 123 Dog Facts Street, Melbourne VIC 3000<br/><br/>
+                </p>
+                <!-- form to enter user details -->
+                <form id="contactform">
+                    <p>Or complete the following form and we will reach out to you!</p>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" required><br/>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" required><br/>   
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br/><br/>
+                    <button type="button" id="submit" onclick="confirmSubmission()">Submit</button><br/><br/>             
+                </form>
             </div>
-            <!-- Cute dog image to make the page look more interesting -->
-            <div class="image display">
-                <img src="./images/dog.jpg" alt="closed eye cats" style="max-width: 600px;">
-            </div>
+            <div id="confirmation" class="container"></div>
         </header>
-        <footer>
-            <a href="/contact.html">Contact Us</a>
+        <footer class="display text-center">
+            <br/><br/><a href="/index.html">Back to Home Page</a>
         </footer>
     </div>
 </body>
