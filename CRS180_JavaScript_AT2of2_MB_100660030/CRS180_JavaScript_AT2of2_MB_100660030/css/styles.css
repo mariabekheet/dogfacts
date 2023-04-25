@@ -1,0 +1,11 @@
+.display {
+    width: 100%;
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+
+#facts {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}

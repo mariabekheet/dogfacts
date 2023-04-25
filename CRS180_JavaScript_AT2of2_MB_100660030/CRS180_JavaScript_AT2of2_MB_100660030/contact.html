@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv=”Content-Security-Policy” content="default-src ’self’;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Main JavaScript File -->
+    <script src="js/main.js" defer></script>
+    <script src="js/config.js" defer></script>
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <div>
+        <header class="display text-center">
+            <h1 id="random">🐶 Dog Facts</h1>
+            <h3>Contact Us</h3>
+            <div id="contact" class="container">
+                <!-- P element with contact details -->
+                <p>
+                    Phone Number: 0412 345 678<br/>
+                    Email: info@dogfacts.com.au<br/>
+                    Address: 123 Dog Facts Street, Melbourne VIC 3000<br/><br/>
+                </p>
+                <!-- form to enter user details -->
+                <form id="contactform">
+                    <p>Or complete the following form and we will reach out to you!</p>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" required><br/>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" required><br/>   
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br/><br/>
+                    <!-- button to call the confirmSubmission JS function-->
+                    <button type="button" id="submit" onclick="confirmSubmission()">Submit</button><br/><br/>             
+                </form>
+            </div>
+            <div id="confirmation" class="container"></div>
+        </header>
+        <footer class="display text-center">
+            <!--link back to home page-->
+            <br/><br/><b><a href="/index.html">Back to Home</a></b>
+        </footer>
+    </div>
+</body>
+
+</html>
